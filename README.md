@@ -1,5 +1,5 @@
 # binary playground
 
-yarn install
+npm install
 
 node binary.js
