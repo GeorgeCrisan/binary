@@ -2,4 +2,4 @@
 
 npm install
 
-node binary.js
+node binary.js or npm start
