@@ -1,0 +1,11 @@
+{
+  "name": "binary",
+  "main": "binary.js",
+  "type": "module",
+  "scripts": {
+    "start": "node binary.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
