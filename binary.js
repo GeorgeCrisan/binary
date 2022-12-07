@@ -20,10 +20,8 @@ const transformBinaryToASCIIString = (str) => {
   return binString;
 }
 
-// Part 1
-
 // Do a http GET request to some text
-(async function () {
+const fetchSomeTextData = async () => {
   const response = await fetch('https://www.georgecrisan.com');
 
   // data Buffer (raw data)
@@ -41,12 +39,16 @@ const transformBinaryToASCIIString = (str) => {
   // const text = await response.text(); alternatively 
   // Website Text 
   console.log("!3", decodedText);
-})()
+};
 
 
+// Part 1 
+
+// fetchSomeTextData();
 
 // Part 2
+
 const binaryData = transformUint8ArrayToBinaryString([60, 33, 68, 79]);
 
-console.log("buffer Array to binary ****:", binaryData);
-console.log("Binary to ASCII ****:", transformBinaryToASCIIString('00111100 00100001 01000100'));
+// console.log("buffer Array to binary ****:", binaryData);
+// console.log("Binary to ASCII ****:", transformBinaryToASCIIString('00111100 00100001 01000100'));
